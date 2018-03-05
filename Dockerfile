@@ -1,5 +1,5 @@
 # Note: The newer busybox:glibc is missing libpthread.so.0.
-FROM busybox: ubuntu-14.04
+FROM busybox:ubuntu-14.04
 MAINTAINER Werner Beroux <werner@beroux.com>
 
 # Install ngrok (latest official stable from https://ngrok.com/download).
