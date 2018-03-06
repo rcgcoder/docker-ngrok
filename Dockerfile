@@ -24,4 +24,7 @@ USER ngrok
 
 EXPOSE 4040
 
-CMD ["/entrypoint.sh"]
+WORKDIR /opt/ngrok/conf
+RUN ngrok -config=/opt/ngrok/conf/ngrok.yml 192.168.100.100:80
+
+#CMD ["/entrypoint.sh"]
