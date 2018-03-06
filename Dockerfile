@@ -25,5 +25,5 @@ USER ngrok
 EXPOSE 4040
 
 WORKDIR /opt/ngrok/conf
-
-CMD ["/entrypoint.sh"]
+RUN /bin/sh
+#CMD ["/entrypoint.sh"]
