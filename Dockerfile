@@ -25,6 +25,5 @@ USER ngrok
 EXPOSE 4040
 
 WORKDIR /opt/ngrok/conf
-RUN ngrok start -config=/opt/ngrok/conf/ngrok.yml default_tunnel
 
-#CMD ["/entrypoint.sh"]
+CMD ["/entrypoint.sh"]
